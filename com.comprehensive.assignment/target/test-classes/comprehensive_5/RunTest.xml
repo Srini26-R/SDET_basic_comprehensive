@@ -1,0 +1,14 @@
+<suite name="Autify Test Suite">
+	<test name="Autify Test">
+		<groups>
+			<run>
+				<include name="LaunchApp" />
+				<include name="ChildWindowTitleValidation" />
+				<include name="MandatoryFieldValidation" />
+			</run>
+		</groups>
+		<classes>
+			<class name="comprehensive_5.AutifyTestExecution" />
+		</classes>
+	</test>
+</suite>
