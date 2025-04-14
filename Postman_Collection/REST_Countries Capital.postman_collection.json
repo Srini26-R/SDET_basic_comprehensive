@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "c66f1808-e158-492d-a41b-dab8aaf878ff",
+		"name": "REST_Countries Capital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14412593"
+	},
+	"item": [
+		{
+			"name": "Positive cases",
+			"item": [
+				{
+					"name": "Search by valid country’s capital",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.com/v3.1/capital/{{capital}}",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"capital",
+								"{{capital}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search by valid country’s capital_Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://restcountries.com/v3.1/capital/{{capital}}",
+									"protocol": "https",
+									"host": [
+										"restcountries",
+										"com"
+									],
+									"path": [
+										"v3.1",
+										"capital",
+										"{{capital}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 17:57:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1362"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "public, immutable, max-age=31556926"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": {\n            \"common\": \"Estonia\",\n            \"official\": \"Republic of Estonia\",\n            \"nativeName\": {\n                \"est\": {\n                    \"official\": \"Eesti Vabariik\",\n                    \"common\": \"Eesti\"\n                }\n            }\n        },\n        \"tld\": [\n            \".ee\"\n        ],\n        \"cca2\": \"EE\",\n        \"ccn3\": \"233\",\n        \"cca3\": \"EST\",\n        \"cioc\": \"EST\",\n        \"independent\": true,\n        \"status\": \"officially-assigned\",\n        \"unMember\": true,\n        \"currencies\": {\n            \"EUR\": {\n                \"name\": \"Euro\",\n                \"symbol\": \"€\"\n            }\n        },\n        \"idd\": {\n            \"root\": \"+3\",\n            \"suffixes\": [\n                \"72\"\n            ]\n        },\n        \"capital\": [\n            \"Tallinn\"\n        ],\n        \"altSpellings\": [\n            \"EE\",\n            \"Eesti\",\n            \"Republic of Estonia\",\n            \"Eesti Vabariik\"\n        ],\n        \"region\": \"Europe\",\n        \"subregion\": \"Northern Europe\",\n        \"languages\": {\n            \"est\": \"Estonian\"\n        },\n        \"translations\": {\n            \"ara\": {\n                \"official\": \"جمهورية إستونيا\",\n                \"common\": \"إستونيا\"\n            },\n            \"bre\": {\n                \"official\": \"Republik Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"ces\": {\n                \"official\": \"Estonská republika\",\n                \"common\": \"Estonsko\"\n            },\n            \"cym\": {\n                \"official\": \"Gweriniaeth Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"deu\": {\n                \"official\": \"Republik Estland\",\n                \"common\": \"Estland\"\n            },\n            \"est\": {\n                \"official\": \"Eesti Vabariik\",\n                \"common\": \"Eesti\"\n            },\n            \"fin\": {\n                \"official\": \"Viron tasavalta\",\n                \"common\": \"Viro\"\n            },\n            \"fra\": {\n                \"official\": \"République d'Estonie\",\n                \"common\": \"Estonie\"\n            },\n            \"hrv\": {\n                \"official\": \"Republika Estonija\",\n                \"common\": \"Estonija\"\n            },\n            \"hun\": {\n                \"official\": \"Észt Köztársaság\",\n                \"common\": \"Észtország\"\n            },\n            \"ita\": {\n                \"official\": \"Repubblica di Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"jpn\": {\n                \"official\": \"エストニア共和国\",\n                \"common\": \"エストニア\"\n            },\n            \"kor\": {\n                \"official\": \"에스토니아 공화국\",\n                \"common\": \"에스토니아\"\n            },\n            \"nld\": {\n                \"official\": \"Republiek Estland\",\n                \"common\": \"Estland\"\n            },\n            \"per\": {\n                \"official\": \"جمهوری استونی\",\n                \"common\": \"اِستونی\"\n            },\n            \"pol\": {\n                \"official\": \"Republika Estońska\",\n                \"common\": \"Estonia\"\n            },\n            \"por\": {\n                \"official\": \"República da Estónia\",\n                \"common\": \"Estónia\"\n            },\n            \"rus\": {\n                \"official\": \"Эстонская Республика\",\n                \"common\": \"Эстония\"\n            },\n            \"slk\": {\n                \"official\": \"Estónska republika\",\n                \"common\": \"Estónsko\"\n            },\n            \"spa\": {\n                \"official\": \"República de Estonia\",\n                \"common\": \"Estonia\"\n            },\n            \"srp\": {\n                \"official\": \"Естонска Република\",\n                \"common\": \"Естонија\"\n            },\n            \"swe\": {\n                \"official\": \"Republiken Estland\",\n                \"common\": \"Estland\"\n            },\n            \"tur\": {\n                \"official\": \"Estonya Cumhuriyeti\",\n                \"common\": \"Estonya\"\n            },\n            \"urd\": {\n                \"official\": \"جمہوریہ اسٹونیا\",\n                \"common\": \"اسٹونیا\"\n            },\n            \"zho\": {\n                \"official\": \"爱沙尼亚共和国\",\n                \"common\": \"爱沙尼亚\"\n            }\n        },\n        \"latlng\": [\n            59,\n            26\n        ],\n        \"landlocked\": false,\n        \"borders\": [\n            \"LVA\",\n            \"RUS\"\n        ],\n        \"area\": 45227,\n        \"demonyms\": {\n            \"eng\": {\n                \"f\": \"Estonian\",\n                \"m\": \"Estonian\"\n            },\n            \"fra\": {\n                \"f\": \"Estonienne\",\n                \"m\": \"Estonien\"\n            }\n        },\n        \"flag\": \"🇪🇪\",\n        \"maps\": {\n            \"googleMaps\": \"https://goo.gl/maps/6SsynwGUodL1sDvq8\",\n            \"openStreetMaps\": \"https://www.openstreetmap.org/relation/79510\"\n        },\n        \"population\": 1331057,\n        \"gini\": {\n            \"2018\": 30.3\n        },\n        \"fifa\": \"EST\",\n        \"car\": {\n            \"signs\": [\n                \"EST\"\n            ],\n            \"side\": \"right\"\n        },\n        \"timezones\": [\n            \"UTC+02:00\"\n        ],\n        \"continents\": [\n            \"Europe\"\n        ],\n        \"flags\": {\n            \"png\": \"https://flagcdn.com/w320/ee.png\",\n            \"svg\": \"https://flagcdn.com/ee.svg\",\n            \"alt\": \"The flag of Estonia is composed of three equal horizontal bands of blue, black and white.\"\n        },\n        \"coatOfArms\": {\n            \"png\": \"https://mainfacts.com/media/images/coats_of_arms/ee.png\",\n            \"svg\": \"https://mainfacts.com/media/images/coats_of_arms/ee.svg\"\n        },\n        \"startOfWeek\": \"monday\",\n        \"capitalInfo\": {\n            \"latlng\": [\n                59.43,\n                24.72\n            ]\n        },\n        \"postalCode\": {\n            \"format\": \"#####\",\n            \"regex\": \"^(\\\\d{5})$\"\n        }\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Negative cases",
+			"item": [
+				{
+					"name": "Search by invalid country’s capital",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404 [Not Found!]\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.com/v3.1/capital/Test_Capital123",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"capital",
+								"Test_Capital123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search by invalid country’s capital_Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://restcountries.com/v3.1/capital/Test_Capital123",
+									"protocol": "https",
+									"host": [
+										"restcountries",
+										"com"
+									],
+									"path": [
+										"v3.1",
+										"capital",
+										"Test_Capital123"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.22.1"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 18:04:03 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 404,\n    \"message\": \"Not Found\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
